@@ -9,7 +9,8 @@ const sliderContainer = document.getElementById('sliders');
 
 //Enter Button Activated
 searchFeald.addEventListener("keypress", function(event){
-  if(event.keyCode == 13){
+  // if(event.keyCode == 13){ //Remove keyCode deprecated
+    if(event.key =='Enter'){
     searchBtn.click();
   }
 });
