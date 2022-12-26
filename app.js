@@ -1,9 +1,19 @@
+const searchFeald = document.getElementById("search");
+const searchBtn = document.getElementById('search-btn');
+
 const imagesArea = document.querySelector('.images');
 const gallery = document.querySelector('.gallery');
 const galleryHeader = document.querySelector('.gallery-header');
-const searchBtn = document.getElementById('search-btn');
 const sliderBtn = document.getElementById('create-slider');
 const sliderContainer = document.getElementById('sliders');
+
+//Enter Button Activated
+searchFeald.addEventListener("keypress", function(event){
+  if(event.keyCode == 13){
+    searchBtn.click();
+  }
+});
+
 // selected image 
 let sliders = [];
 
